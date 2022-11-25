@@ -8,7 +8,7 @@ public class SoftwareAndHardwareCheck {
         this.hardwareCheck = new HardwareCheck();
     }
 
-    public boolean check(){
+    public boolean switchOnLaptop(){
         System.out.println("Checking hardware and software before booting up the system ");
         return softwareCheck.checkSoftwaresOnBoot() && hardwareCheck.checkHardwareOnBoot();
     }
