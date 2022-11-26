@@ -1,2 +1,12 @@
-package PACKAGE_NAME;public class DebugLogger {
+public class DebugLogger extends AbstractLogger{
+
+
+    public DebugLogger(int level) {
+        this.level = level;
+    }
+
+    @Override
+    protected void display(String msg) {
+        System.out.println(" DEBUG : " + msg);
+    }
 }
